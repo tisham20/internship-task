@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .form-container {
+            width: 450px;
+            background-color: lightgray;
+            padding: 15px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 5px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .btn-group {
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <table>
+            <tr><td>Enter your first name</td><td><input type="text" placeholder="Enter your first name"></td></tr>
+            <tr><td>Enter your last name</td><td><input type="text"></td></tr>
+            <tr><td>Enter your password</td><td><input type="password"></td></tr>
+            <tr><td>Re-enter your password</td><td><input type="password"></td></tr>
+            <tr><td>Enter your email</td><td><input type="email"></td></tr>
+            <tr><td>Enter your mobile</td><td><input type="text"></td></tr>
+            <tr><td>Enter your address</td><td><textarea></textarea></td></tr>
+            <tr><td>Select your gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr><td>Select your hobbies</td>
+                <td>
+                    <input type="checkbox"> Hobby1
+                    <input type="checkbox"> Hobby2
+                    <input type="checkbox"> Hobby3
+                </td>
+            </tr>
+            <tr><td>Select your DOB</td><td><input type="date"></td></tr>
+            <tr><td>Select your Country</td><td><select><option>Select your country</option></select></td></tr>
+            <tr><td>Upload your pic</td><td><input type="file"></td></tr>
+            <tr><td colspan="2" class="btn-group">
+                <button type="submit">Save My Data</button>
+                <button type="reset">Reset Data</button>
+            </td></tr>
+        </table>
+    </div>
+</body>
+</html>

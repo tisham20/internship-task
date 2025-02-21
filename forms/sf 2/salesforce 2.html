@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Edition Signup | Salesforce</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #226dc8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 450px;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #032D60;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .signup-form {
+      text-align: left;
+    }
+
+    .name-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .terms {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .terms a {
+      color: #0070d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .checkbox-container input {
+      margin: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    .signup-btn {
+      background-color: #0070d2;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: #005bb5;
+    }
+
+    .login-link {
+      font-size: 14px;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .login-link a {
+      color: #0070d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="salesforce-logo-corporate.svg" alt="Salesforce Logo">
+    </div>
+    <h2>Sign up for your Salesforce Developer Edition</h2>
+    <p>A Salesforce Platform environment for free.</p>
+
+    <form class="signup-form">
+      <div class="name-row">
+        <div>
+          <label for="fname">First Name*</label>
+          <input type="text" placeholder="First Name" required>
+        </div>
+        <div>
+          <label for="lname">Last Name*</label>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <div class="name-row">
+        <div>
+          <label for="email">Email*</label>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div>
+          <label for="job">Role*</label>
+          <select required>
+            <option value="">Your job role</option>
+            <option>Developer</option>
+            <option>Architect/CTO</option>
+            <option>Administrator</option>
+            <option>IT Manager</option>
+            <option>Business Manager</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="name-row">
+        <div>
+          <label for="company">Company*</label>
+          <input type="text" placeholder="Company" required>
+        </div>
+        <div>
+          <label for="employees">Employees*</label>
+          <select required>
+            <option value="">Select</option>
+            <option>1-25</option>
+            <option>26-100</option>
+            <option>101-200</option>
+            <option>201-500</option>
+            <option>501-2000</option>
+            <option>2001+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="name-row">
+        <div>
+          <label for="phone">Phone*</label>
+          <input type="tel" placeholder="Phone" required>
+        </div>
+        <div>
+          <label for="country">Country/Region*</label>
+          <select required>
+            <option value="">Country/Region</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>United Kingdom</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="uname">Username*</label>
+      <input type="text" placeholder="Username" required>
+
+      <div class="terms">
+        Your username must be in the form of an email address (it does not have to be real). It must be unique and
+        cannot be associated with another Salesforce login credential. 
+        <a href="#">Read more about username recommendations.</a>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="agreement" required>
+        <label for="agreement">
+          I agree to the <a href="#">Main Services Agreement - Developer Services</a> and 
+          <a href="#">Salesforce Program Agreement</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign me Up</button>
+
+      <div class="login-link">
+        <p>Already have a Salesforce Developer Environment?</p>  
+        <a href="#">Log in</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Free Trial</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 420px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #032D60;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group input {
+            margin-right: 8px;
+        }
+
+        .blue-link {
+            color: #0070d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            background-color: #0070d2;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Start Your Free Salesforce Trial</h2>
+    <p>Fill in the form to get started with your free trial today.</p>
+
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" placeholder="Email" required>
+            <select required>
+                <option value="" disabled selected>Job Title</option>
+                <option>Sales Manager</option>
+                <option>Developer</option>
+                <option>IT Manager</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Company" required>
+            <select required>
+                <option value="" disabled selected>Employees</option>
+                <option>1-25</option>
+                <option>26-100</option>
+                <option>101-200</option>
+                <option>201-500</option>
+                <option>501-2000</option>
+                <option>2001+</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" placeholder="Phone" required>
+            <select required>
+                <option value="India" selected>India</option>
+                <option>USA</option>
+                <option>Japan</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" required>
+            <label>I agree to the <a href="#" class="blue-link">Main Services Agreement</a>.</label>
+        </div>
+
+        <button type="submit" class="submit-btn">START MY FREE TRIAL</button>
+    </form>
+</div>
+
+</body>
+</html>
