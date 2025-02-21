@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Notes</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 50px;
+            font-size: 22px;
+        }
+        
+        .note {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 5px;
+            color: #333;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .note .bar {
+            width: 6px;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .danger {
+            background-color: #f8d7da;
+            border-left: 6px solid #dc3545;
+        }
+        .danger .bar {
+            background-color: #dc3545;
+        }
+        .success {
+            background-color: #d4edda;
+            border-left: 6px solid #28a745;
+        }
+        .success .bar {
+            background-color: #28a745;
+        }
+        .info {
+            background-color: #d1ecf1;
+            border-left: 6px solid #17a2b8;
+        }
+        .info .bar {
+            background-color: #17a2b8;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 6px solid #ffc107;
+        }
+        .warning .bar {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Notes</h1>
+    <div class="note danger">
+        <div class="bar"></div>
+        <strong>Danger!</strong>&nbsp; Please be careful.
+    </div>
+    <div class="note success">
+        <div class="bar"></div>
+        <strong>Success!</strong>&nbsp; Your action was successful.
+    </div>
+    <div class="note info">
+        <div class="bar"></div>
+        <strong>Info!</strong>&nbsp; Here is some important information.
+    </div>
+    <div class="note warning">
+        <div class="bar"></div>
+        <strong>Warning!</strong>&nbsp; Be aware of potential issues.
+    </div>
+</body>
+</html>
